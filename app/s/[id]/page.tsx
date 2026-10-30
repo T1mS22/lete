@@ -3,7 +3,7 @@ import RevealSecret from "@/components/RevealSecret";
 import { isSecretId } from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Lete · Someone shared a secret with you",
+  title: "Someone shared a secret with you · t-s.dev",
 };
 
 export default async function SecretPage({

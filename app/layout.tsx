@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lete · Share a secret once",
+  title: "Share a secret once · t-s.dev",
   description:
     "Send passwords and other secrets through a one-time link, encrypted in your browser.",
   robots: { index: false, follow: false },
@@ -40,7 +40,7 @@ export default async function RootLayout({
         <header className="mx-auto flex w-full max-w-2xl items-center justify-between px-4 pt-8 sm:px-6">
           <Link href="/" className="flex items-center gap-2 font-semibold">
             <span className="size-2.5 rounded-full bg-primary" aria-hidden />
-            Lete
+            One-time secret sharing
           </Link>
           <a
             href="https://t-s.dev"
