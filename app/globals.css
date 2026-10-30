@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+/* Same palette as t-s.dev. Built-in daisyUI themes are disabled so the app
+   stays dark regardless of the OS color scheme. */
+@plugin "daisyui" {
+  themes: false;
+}
+
+@plugin "daisyui/theme" {
+  name: "trappist";
+  default: true;
+  prefersdark: false;
+  color-scheme: dark;
+
+  --color-base-100: #0b0d12;
+  --color-base-200: #13161e;
+  --color-base-300: #1c2029;
+  --color-base-content: #e8e6e1;
+  --color-primary: #ff7a00;
+  --color-primary-content: #1a0d00;
+  --color-accent: #ff5714;
+  --color-neutral: #232733;
+  --color-neutral-content: #e8e6e1;
+  --color-error: #ff6b6b;
+  --color-error-content: #1a0505;
+  --color-success: #4ade80;
+  --color-success-content: #04140a;
+
+  --radius-selector: 0.5rem;
+  --radius-field: 0.5rem;
+  --radius-box: 0.75rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+/* Custom tokens: text-muted, text-faint, border-line, bg-line, ...
+   font-mono resolves to JetBrains Mono, loaded via next/font in app/layout.tsx. */
+@theme {
+  --color-muted: #9a988f;
+  --color-faint: #6b6a64;
+  --color-line: #232733;
+  --font-mono:
+    var(--font-jetbrains-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@layer base {
+  p,
+  li {
+    text-wrap: pretty;
+  }
+
+  h1,
+  h2 {
+    text-wrap: balance;
+  }
+}
